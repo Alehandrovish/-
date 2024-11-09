@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добрий кошик</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon-16x16.png">
+    <link rel="manifest" href="./src/site.webmanifest">
+    <link rel="mask-icon" href="./src/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="admin.css" type="text/css">
+</head>
+<body class="body">
+    <header>
+        <img class="header_img" src="./src/icon/icon.png">
+        <a class="header_text" href="./index.html">Добрий кошик</a>
+        <img class="header_img" src="./src/icon/icon.png">    
+    </header>
+    <div class="carcass">
+        <div class = "carcass_administration">
+            <button id = "BtnAddInUp" class="carcass_administration_button">Додати новий товар</button>
+            <button id = "BtnChangeInUp" class="carcass_administration_button">Змінити існуючий товар</button>
+            <button id = "BtnRemoveInUp" class="carcass_administration_button">Видалити товар</button>
+        </div>
+        <div class="carcass_administration_body">
+            <h2 id="h2_list">Поточний список продуктів</h2>
+            <table id="data-table" class="carcass_administration_body_listOfProduct">
+                <thead>
+                    <tr>
+                        <th>Код продукту</th>
+                        <th>Назва продукту</th>
+                        <th>Код департаменту</th>
+                        <th>Картинка</th>
+                        <th>Опис</th>
+                        <th>Кількість</th>
+                        <th>ціна</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <div class="carcass_administration_body_addNew">
+                <form id="formAdd">
+                    <h2>Додати новий продукт</h2>
+                    <label for="name">Наза продукту:</label>
+                    <input type="text" id="name" name="name" placeholder="Назва продукту">
+                    <label for="department-code">Код департаменту:</label>
+                    <input list="departments" id="department-code" name="department-code" 
+                    placeholder="Бакалія, Молочні вироби, Випічка, Солодощі, м'ясо і риба, фрукти та овочі">
+                        <datalist id="departments">
+                            <option value="1">Бакалія</option>
+                            <option value="2">Молочні вироби</option>
+                            <option value="3">Випічка</option>
+                            <option value="4">Солодощі</option>
+                            <option value="5">М'ясо і риба</option>
+                            <option value="6">Фрукти та овочі</option>
+                        </datalist>
+                    <label for="image">Картинка:</label>
+                    <input type="text" id="image" name="image" placeholder="Ім'я.png">
+                    <label for="description">Опис:</label>
+                    <textarea id = "description" placeholder="Опис продукту"></textarea>
+                    <label for="quantity" >Кількість:</label>
+                    <input type="number" id="quantity" name="quantity" placeholder="без шт.">
+                    <label for="price" >Ціна:</label>
+                    <input type="number" id="price" name="price" placeholder="без грн.">
+                    <button type = "submit" id="BtnAddInDown">Додати продукт</button>
+                </form>
+            </div>
+            <div class="carcass_administration_body_changeMain">
+                <form id="formChange">
+                <h2>Змінити значення продукту</h2>
+                <label for="id_products_change">ID продукту</label>
+                <input type="text" id="id_products_change" name="id_products">
+                <label for="name">Наза продукту:</label>
+                <input type="text" id="name_change" name="name" placeholder="Назва продукту">
+                <label for="department-code">Код департаменту:</label>
+                <input list="departments" id="department-code_change" name="department-code" 
+                placeholder="Бакалія, Молочні вироби, Випічка, Солодощі, м'ясо і риба, фрукти та овочі">
+                    <datalist id="departments_change">
+                        <option value="1">Бакалія</option>
+                        <option value="2">Молочні вироби</option>
+                        <option value="3">Випічка</option>
+                        <option value="4">Солодощі</option>
+                        <option value="5">М'ясо і риба</option>
+                        <option value="6">Фрукти та овочі</option>
+                    </datalist>
+                <label for="image_change">Картинка:</label>
+                <input type="text" id="image_change" name="image" placeholder="Ім'я.png">
+                <label for="description_change">Опис:</label>
+                <textarea id="description_change" placeholder="Опис продукту"></textarea>
+                <label for="quantity_change" >Кількість:</label>
+                <input type="number" id="quantity_change" name="quantity" placeholder="без шт.">
+                <label for="price_change" >Ціна:</label>
+                <input type="number" id="price_change" name="price" placeholder="без грн.">
+                <button id="BtnChangeInDown" type="submit">Змінити</button>
+                </form>
+            </div>
+            <div class="carcass_administration_body_remove">
+                <h2>Видалити продукт</h2>
+                <form id="formRemove">
+                    <label for="id_products">ID продукту</label>
+                    <input type="text" id="id_products_remove" name="id_products">
+                    <button id="BtnRemoveInDown" type="submit">Видалити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="./admin.js"></script>
+</html>

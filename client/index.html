@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добрий кошик</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon-16x16.png">
+    <link rel="manifest" href="./src/site.webmanifest">
+    <link rel="mask-icon" href="./src/safari-pinned-tab.svg" color="#5bbad5">
+    <link type="image/x-icon" href="./src/icon/favicon/favicon.ico" rel="shortcut icon" />
+    <link type="Image/x-icon" href="./src/icon/favicon/favicon.ico" rel="icon" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body class="body">
+    <header>
+        <img class="header_img" src="./src/icon/icon.png">
+        <a class="header_text" href="./index.html">Добрий кошик</a>
+        <img class="header_img" src="./src/icon/icon.png">    
+    </header>
+    <div class="body_main">
+    <div class="shopbag">
+        <div class="shopbag__title">
+            <h2>Ваше замовлення</h2>
+            <img  class="shopbag__title__img" src="./src/shopbag/x.png">
+        </div>
+        <div class="chopbag__body">
+            <ul id="shopList">
+                
+            </ul>
+        </div>
+        <div class="chopbag__footer">
+            <div class="chopbag__footer__order">
+                <p class="chopbag__footer__text">!Доставка при замовленні на сумму від 500 грн!</p>
+            </div>
+            <div class="chopbag__footer__fullOrder">
+                <p class="chopbag__footer__text">Всього до сплати:</p>
+                <p  id="totalTotalPrice" class="chopbag__footer__text">0 грн</p>
+            </div>
+            <div class="chopbag__footer__button">Замовити
+            </div>
+        </div>
+    </div>
+    <div class="carcass">
+        <div class="carcass_plus">
+            <aside class="navigation">
+                <span class="navigation_header">Пошук по відділам:</span>
+                <span class="navigation_list">Бакалія</span>
+                <span class="navigation_list">Молочні вироби</span>
+                <span class="navigation_list">Випічка</span>
+                <span class="navigation_list">Солодощі</span>
+                <span class="navigation_list">М'ясо та риба</span>
+                <span class="navigation_list">Фрукти та овочі</span>
+            </aside>
+            <div class="conteiner_body">
+                <div class="conteiner_searchAndShopbag">
+                    <div class="conteiner_searchAndShopbag_search">
+                        <button class="conteiner_searchAndShopbag_search_navigation">
+                            <img class="conteiner_searchAndShopbag_search_navigation_img" src="./src/pointers/navigation.png">
+                        </button>
+                        <input class="conteiner_searchAndShopbag_inputText" type="text" placeholder="Я шукаю....">
+                        <button class="conteiner_searchAndShopbag_buttonFind">Знайти</button>
+                    </div>
+                    <button class="conteiner_searchAndShopbag_buttonShopbag">
+                        <span >Кошик</span>
+                    </button>
+                </div>
+                <div class="conteiner_viddil" id="grocery">
+                    <span class="conteiner_viddil_name" id="grocery">Бакалія</span>
+                    <div class="container_viddil_listOfProduct">
+                        
+                    </div>
+                </div>
+                <div class="conteiner_viddil" id="milk">
+                    <span class="conteiner_viddil_name" id="milk">Молочні вироби</span>
+                    <div class="container_viddil_listOfProduct">
+   
+                    </div>
+                </div>
+                <div class="conteiner_viddil" id="baking">
+                    <span class="conteiner_viddil_name" id="baking">Випічка</span>
+                    <div class="container_viddil_listOfProduct">
+                                                   
+                    </div>
+                </div>
+                <div class="conteiner_viddil" id="sweets">
+                    <span class="conteiner_viddil_name" id="sweets">Солодощі</span>
+                    <div class="container_viddil_listOfProduct">
+                                         
+                       </div>
+                </div>
+                <div class="conteiner_viddil" id="meat">
+                    <span class="conteiner_viddil_name" id="meat">М'ясо та риба</span>
+                    <div class="container_viddil_listOfProduct">
+                                                
+                    </div>
+                </div>
+                <div class="conteiner_viddil" id="fruit">
+                    <span class="conteiner_viddil_name" id="fruit">Фрукти та овочі</span>
+                    <div class="container_viddil_listOfProduct">
+                       
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+    <footer>
+        <div class="container">
+            <div class="footer__top">
+                <img class="image-footer"src="./src/icon/icon.png">
+                <button class="back__button">
+                    <span class="back__button_text">Повернутися в початок</span>
+                    <img class="up__pointer" src="./src/pointers/pointerUp.png">
+                </button>
+            </div>
+            <div class="footer__middle">
+                <p>Доставка:</p>
+                <p class="num__of__tel">Працюємо з 8:00 до 20:00</p>
+                <p class="num__of__tel">+(xxx)xxxxxxxxx</p>
+                <p class="num__of__tel">+(yyy)yyyyyyyyy</p>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__bottom__text">
+                    2024 Добрий кошик
+                </span>
+                <span>
+                    <a class="footer__bottom__text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Політики конфіденційності і обробка персональних даних</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./page.js"></script>
+</body>
+</html>

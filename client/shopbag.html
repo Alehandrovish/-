@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Добрий кошик</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="./src/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./src/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon-16x16.png">
+        <link rel="manifest" href="./src/site.webmanifest">
+        <link rel="mask-icon" href="./src/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    </head>
+<body class="body">
+    <div class="veil">
+
+    </div>
+    <div class="payList">
+        <div class="payList_header">
+            <p class="payList_header">Ваше замовлення прийнято</p>
+            <p class="payList_header id" style="font-size: 18px;"></p> 
+        </div>
+        <div class="payList_body">
+            <div class="payList_body_item_list">
+                <p class="payList_body_item">(Назва:)</p>
+                <p class="payList_body_item">(Ціна) * (Кількість)</p>
+            </div>
+            <div class="payList_body_formData_list">
+                <span class="payList_body_formData">Данные из выбора формы</span>
+            </div>
+        </div>
+        <div class="payList_footer_list">
+            <div class="payList_footer_price">
+                <span class="payList_footer">Сума до сплати: (Ціна) грн</span>
+            </div>
+            <div class="payList_footer_btnClose">
+                <span class="payList_footer_btnClose_close">Закрити</span>
+            </div>
+        </div>
+    </div>
+    <header>
+        <img class="header_img" src="./src/icon/icon.png">
+        <a class="header_text" href="./index.html">Добрий кошик</a>
+        <img class="header_img" src="./src/icon/icon.png"> 
+    </header>
+    <form id="form" action="#" class="wrap">
+        <div class="questionnaire">
+            <div class="contacts">
+                <div class="contacts__name">
+                    <h3>Контакти</h3>
+                    <div id="name" class="errorText">
+                        <input class="contacts__input _req _name" name="name" type="text"  placeholder="Введіть Ваше ім'я" value="">
+                    </div>
+                </div>
+                <div class="contacts__name">
+                    <h3>Телефон</h3>
+                    <div id="tel" class="errorText">
+                        <input class="contacts__input _req _tel" name="mobile" type="tel" placeholder="Введіть Ваш номер телефону" value="">
+                     </div>
+                </div>
+            </div>
+            <div class="delivery">
+                <div class="delivery__choise">
+                    <h3>Оберіть тип доставки</h3>  
+                    <div class="delivery__choise__type">
+                        <label class="delivery__choise__toHouse" for="delivery_by_yourself">
+                            <input class="delivery__choise__toHouse__radio _checkbox" type="radio" id="delivery_by_yourself" name="delivery" value="yourself" checked>
+                            <span class="delivery__choise__toHouse__fake"></span>
+                            <span class="delivery__choise__toHouse__text">Самовивіз</span>
+                        </label>
+                    </div>
+                    <div class="delivery__choise__type">
+                        <label class="delivery__choise__toHouse" for="delivery__choise__toHouse">
+                            <input class="delivery__choise__toHouse__radio" type="radio" id="delivery__choise__toHouse" name="delivery" value="home">
+                            <span class="delivery__choise__toHouse__fake"></span>
+                            <span class="delivery__choise__toHouse__text">Доставка на дім</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="take-yourself">
+                    <h3>Адреса</h3>
+                    <select class="choose_district _req _your">
+                        <option value="0" selected disabled>--Виберіть дільницю--</option>
+                        <option value="1">вул. Шевченко 133Б</option>
+                        <option value="2">пров. Лісний 15А</option>
+                    </select>
+                </div>
+                <div class="delivery-to-home">
+                    <h3>Адреса</h3>
+                    <input type="text" class="choose_district _req _street" name="street" placeholder="Введіть назву вулиці" value="">
+                    <div class="adress" id="num">
+                        <input  class="adress__data _req _street-data" type="text" placeholder="Під'їзд" value="">
+                        <input  class="adress__data _req _street-data" type="text" placeholder="Поверх" value="">
+                        <input  class="adress__data _req _street-data" type="text" placeholder="Квартира" value="">
+                    </div>
+                    <select class="choose_district _req _street _time">
+                        <option value="0" selected disabled>--Виберіть час доставки--</option>
+                        <option value="08:00">08:00</option>
+                        <option value="08:30">08:30</option>
+                        <option value="09:00">09:00</option>
+                        <option value="09:30">9:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="14:00">14:00</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                        <option value="17:30">17:30</option>
+                        <option value="18:00">18:00</option>
+                        <option value="18:30">18:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                    </select>
+                </div>
+            </div> 
+            <div class="comments">
+                <h3 id = "some">Коментар</h3>
+                <textarea class="comments__textarea" name="comment" placeholder="Ваш коментар"></textarea>
+            </div>           
+        </div>
+        <button type="submit" class="button__make-order">Замовити</button>
+    </form>
+    
+    <div class="footer_margin"></div>
+    <footer>
+        <div class="container">
+            <div class="footer__top">
+                <img class="image-footer"src="./src/icon/icon.png">
+                <button class="back__button">
+                    <span class="back__button_text">Повернутися в початок</span>
+                    <img class="up__pointer" src="./src/pointers/pointerUp.png">
+                </button>
+            </div>
+            <div class="footer__middle">
+                <p>Доставка:</p>
+                <p class="num__of__tel">Працюємо з 8:00 до 20:00</p>
+                <p class="num__of__tel">+(xxx)xxxxxxxxx</p>
+                <p class="num__of__tel">+(yyy)yyyyyyyyy</p>
+            </div>
+            <div class="footer__bottom">
+                <span class="footer__bottom__text">
+                    2024 Добрий кошик
+                </span>
+                <span>
+                    <a class="footer__bottom__text" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Політики конфіденційності і обробка персональних даних</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="./shopbag.js"></script>   
+</body>
+</html>
